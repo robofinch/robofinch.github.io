@@ -20,14 +20,14 @@ function showTop() {
    window.setTimeout(function() {
 
        document.getElementById('questionPathAnimation2').beginElement()
-       window.setTimeout(function() {
+
+    }, 3000)
+    window.setTimeout(function() {
 
         document.getElementById('svgGroup1').setAttribute('fill', 'black')
         document.getElementById('svgGroup2').setAttribute('fill', 'black')
 
-       }, 3000)
-
-    }, 3000)
+    }, 6000)
 
 }
 

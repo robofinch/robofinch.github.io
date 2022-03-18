@@ -1,6 +1,6 @@
 loaded.files[  'graphics/loadingScreen.js'  ]   =   true
 
-
+try {
 const backgroundBMPData  =
 
           '424D' + '5E080000' + '00000000' + '5E000000' +
@@ -233,3 +233,4 @@ window.addEventListener(     'load'  ,    function()   {
 
 
 })
+} catch(e) { alert(e)}
