@@ -4,44 +4,6 @@ const main = function() {
 try {
 
 
-
-document.getElementById( 'consoleButton' ).addEventListener(  'click'  ,  function()  {
-
-      try {
-         eval(  document.getElementById( 'console' ).value  )
-
-      }  catch( e ) {   alert( e )   }
-
-})
-
-
-//------------------------------------------------------------------------------------------------
-
-
-Object.prototype.toString  =  function() {   return '[object ' + this.constructor.name + ']'   }
-
-
-function initializeSVG() {
-
-    var svg = document.createElementNS(  SVGNS, 'svg' )
-
-    setAttributes(  svg,  [
-
-        [  'id'           ,    'mainSVG'              ],
-        [  'viewBox'      ,    '0 0 256 192'          ]
-
-    ])
-
-    document.getElementById('IconDiv').appendChild(  svg  )
-
-    svg.classList.add( 'screen' )
-
-    return svg
-}
-
-//------------------------------------------------------------------------------------------------
-
-
 document.getElementById( 'body' ).onclick =  ()  =>  {
 
       showTop()
@@ -54,16 +16,21 @@ function showTop() {
 
    world.classList.remove('hidden')
 
-   document.getElementById('questionPathAnimation').beginElement()
+   document.getElementById('questionPathAnimation1').beginElement()
    window.setTimeout(function() {
-       document.getElementById('svgGroup').setAttribute('fill', 'black')
-    }, 10000)
+
+       document.getElementById('questionPathAnimation2').beginElement()
+       window.setTimeout(function() {
+
+        document.getElementById('svgGroup1').setAttribute('fill', 'black')
+        document.getElementById('svgGroup2').setAttribute('fill', 'black')
+
+       }, 3000)
+
+    }, 3000)
 
 }
 
-
-var mainsvg = initializeSVG()
-//var icn = new Icon('Question', 256, 0, 0);
 
 } catch ( error ) {
 
@@ -76,5 +43,5 @@ window.addEventListener(  'load', function() {
 
       main()
 
-   }, 500)
+   }, 10)
 })
