@@ -21,11 +21,25 @@ document.getElementById( 'consoleButton' ).addEventListener(  'click'  ,  functi
 Object.prototype.toString  =  function() {   return '[object ' + this.constructor.name + ']'   }
 
 
+function initializeSVG() {
+    var svg = document.createElementNS(  SVGNS, 'svg' )
+
+    setAttributes(  svg,  [
+
+        [  'id'           ,    'mainSVG'              ],
+        [  'viewBox'      ,    '0 0 256 256'          ],
+        [  'preserveAspectRatio',   'xMinYMin meet'   ]
+    ])
+
+    document.getElementById('IconDiv').appendChild(  svg  )
+}
+
 //------------------------------------------------------------------------------------------------
 
 
-document.getElementById( 'TopDiv' ).addEventListener(  'click'  ,  event  =>  {
+document.getElementById( 'RenderDiv' ).addEventListener(  'click'  ,  event  =>  {
 
+      showTop()
       alert('click')
 
 })
@@ -38,7 +52,8 @@ function showTop() {
 }
 
 
-
+initializeSVG()
+var icn = new Icon('Circle');
 
 } catch ( error ) {
 
