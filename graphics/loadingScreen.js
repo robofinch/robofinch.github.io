@@ -8,8 +8,8 @@ const backgroundBMPData  =
       '28000000' + '40000000' + '40000000' + '01000400' + '00000000' +
       '00000000' + '00000000' + '00000000' + '0A000000' + '00000000' +
 
-      'A4A4A400' + '8BC0DCFF' + 'FBF6F300' + 'F4F4B900' + '2BD46800' +
-      '36AD0600' + '1C36E300' + '2D06AD00' + 'F57AF200' + 'B0F2F400' +
+      'A4A4FF00' + '8BC0FF00' + 'FBF6F300' + 'B9F4FF00' + '2BD4FF00' +
+      '80208000' + '1C36E300' + '2D06AD00' + 'F57AF200' + 'B0F2F400' +
 
       '5588111114444999999811100077777555300000000000020008111177777666'  +
       '5588111114444999999677700077777555300000000000022888111127777886'  +
@@ -140,15 +140,16 @@ const loadingScreen  =  {
 
       for (  var i = 0;  i  <   this.numLayers;  i++ )  {
 
+        let arr = [[255,0,0], [255,128,128], [255,255,255]][random.randint(3)]
 
          shadow             =   random.twoD(  sizeX, sizeY,  true  ).floatClamp()
                                                                     .map(    rand  =>  {
 
-               return       {   black:  0,    opacity:  rand/3   }
+               return       {   color:  arr,  opacity:  rand/3   }
 
          })
 
-         patternCanvas.grayAlpha.drawMatrix(  shadow, 'black', 'opacity' )
+         patternCanvas.rgbAlpha.drawMatrix(   shadow, 'color', 'opacity' )
 
          this.imageArr.push(    patternCanvas.canvas.toDataURL()         )
 
