@@ -145,9 +145,9 @@ class Icon {
 
        [  'attributeName' ,   'stroke-dashoffset'    ],
        [  'dur'           ,   duration               ],
-       [  'repeatCount'   ,   '1'           ],
+       [  'repeatCount'   ,   '1'                    ],
 
-       [  'values'        ,   "0;10000;"             ]
+       [  'values'        ,   "1000;0;"              ]
 
     ])
 
