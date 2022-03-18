@@ -53,11 +53,19 @@ function showTop() {
    var world = document.getElementById('TopDiv')
 
    world.classList.remove('hidden')
+   icn.g.animate( [
+       {strokeDashoffset  :  10},
+       {strokeDashoffset  :  20}
+   ],
+   {
+       duration: 5000,
+       fill : 'forwards'
+   })
 }
 
 
 var mainsvg = initializeSVG()
-var icn = new Icon('Question');
+var icn = new Icon('Question', 192, 32, 32);
 
 } catch ( error ) {
 
