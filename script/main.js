@@ -57,8 +57,7 @@ function showTop() {
 
 
 var mainsvg = initializeSVG()
-alert([getComputedStyle(mainsvg).width, getComputedStyle(mainsvg).height])
-var icn = new Icon('Circle');
+var icn = new Icon('Question');
 
 } catch ( error ) {
 

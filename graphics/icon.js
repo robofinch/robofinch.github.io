@@ -69,7 +69,6 @@ class Icon {
       setAttributes( this.g, [
 
          [  'id'      ,  this.id                                   ],
-         [  'class'   ,  this.class                                ],
 
          [  'x'       ,  this.pos.x                                ],
          [  'y'       ,  this.pos.y                                ],
@@ -188,6 +187,7 @@ class Icon {
    Question() {
        alert('working...')
        this.use(  this.comID(  'question.main'  )  ,  'question'  )
+       this.useEls[0].classList.add('words')
        alert('worked')
    }
 
