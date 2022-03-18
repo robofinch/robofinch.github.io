@@ -33,17 +33,19 @@ function initializeSVG() {
     ])
 
     document.getElementById('IconDiv').appendChild(  svg  )
+
+    return svg
 }
 
 //------------------------------------------------------------------------------------------------
 
 
-document.getElementById( 'body' ).addEventListener(  'click'  ,  event  =>  {
+document.getElementById( 'body' ).onclick =  ()  =>  {
 
-      alert('click')
       showTop()
+      document.getElementById( 'body' ).onclick = null
 
-})
+}
 
 function showTop() {
    var world = document.getElementById('TopDiv')
@@ -52,7 +54,8 @@ function showTop() {
 }
 
 
-initializeSVG()
+var mainsvg = initializeSVG()
+alert([getComputedStyle(mainsvg).width, getComputedStyle(smainvg).height])
 var icn = new Icon('Circle');
 
 } catch ( error ) {
