@@ -108,13 +108,10 @@ const loadingScreen  =  {
 
       var
             renderStyle   =  document.getElementById(  'RenderDiv'            ).style ,
-            bckgrndStyle  =  document.getElementById(  'BackgroundStaticDiv'  ).style ,
-            devToolStyle  =  document.getElementById(  'InputDiv'             ).style
+            bckgrndStyle  =  document.getElementById(  'BackgroundStaticDiv'  ).style
 
       renderStyle.width   =  window.outerWidth   +  'px'
       renderStyle.height  =  window.outerHeight  +  'px'
-
-      devToolStyle.top    =  window.outerHeight  +  'px'
 
       bckgrndStyle.backgroundImage   =   this.bmpURL
 
