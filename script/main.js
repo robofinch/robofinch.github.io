@@ -22,6 +22,7 @@ Object.prototype.toString  =  function() {   return '[object ' + this.constructo
 
 
 function initializeSVG() {
+
     var svg = document.createElementNS(  SVGNS, 'svg' )
 
     setAttributes(  svg,  [
@@ -37,10 +38,10 @@ function initializeSVG() {
 //------------------------------------------------------------------------------------------------
 
 
-document.getElementById( 'RenderDiv' ).addEventListener(  'click'  ,  event  =>  {
+document.getElementById( 'body' ).addEventListener(  'click'  ,  event  =>  {
 
-      showTop()
       alert('click')
+      showTop()
 
 })
 
