@@ -19,7 +19,7 @@ class Icon {
    static num = 0
 
 
-   constructor(  type, sideLength=48, posX=0, posY=0, iconID=("g" + num++), svgID="mainSVG", baseURI="graphics/question.svg", hidden=false  ) {
+   constructor(  type, sideLength=48, posX=0, posY=0, iconID=("g" + Icon.num++), svgID="mainSVG", baseURI="graphics/question.svg", hidden=false  ) {
 
       this.id        =   iconID
       this.svgID     =   svgID

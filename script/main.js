@@ -48,7 +48,6 @@ document.getElementById( 'body' ).addEventListener(  'click'  ,  event  =>  {
 function showTop() {
    var world = document.getElementById('TopDiv')
 
-   world.click()
    world.classList.remove('hidden')
 }
 
