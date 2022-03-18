@@ -27,7 +27,7 @@ function showTop() {
         document.getElementById('questionPathAnimation3').beginElement()
         document.getElementById('questionPathAnimation4').beginElement()
 
-    }, 2100)
+    }, 1000)
 
 }
 
