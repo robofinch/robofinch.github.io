@@ -24,8 +24,8 @@ function showTop() {
     }, 1000)
     window.setTimeout(function() {
 
-        document.getElementById('svgGroup1').setAttribute('fill', '#800')
-        document.getElementById('svgGroup2').setAttribute('fill', '#800')
+        document.getElementById('questionPathAnimation3').beginElement()
+        document.getElementById('questionPathAnimation4').beginElement()
 
     }, 2100)
 
