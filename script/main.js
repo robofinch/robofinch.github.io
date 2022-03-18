@@ -54,6 +54,11 @@ function showTop() {
 
    world.classList.remove('hidden')
 
+   document.getElementById('questionPathAnimation').beginElement()
+   window.setTimeout(function() {
+       document.getElementById('svgGroup').setAttribute('fill', 'black')
+    }, 10000)
+
 }
 
 
