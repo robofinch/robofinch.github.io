@@ -21,13 +21,13 @@ function showTop() {
 
        document.getElementById('questionPathAnimation2').beginElement()
 
-    }, 3000)
+    }, 1500)
     window.setTimeout(function() {
 
         document.getElementById('svgGroup1').setAttribute('fill', 'black')
         document.getElementById('svgGroup2').setAttribute('fill', 'black')
 
-    }, 6000)
+    }, 3000)
 
 }
 
