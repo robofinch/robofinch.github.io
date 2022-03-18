@@ -58,7 +58,7 @@ function showTop() {
 
 
 var mainsvg = initializeSVG()
-var icn = new Icon('Question', 256, 0, 0);
+//var icn = new Icon('Question', 256, 0, 0);
 
 } catch ( error ) {
 

@@ -204,12 +204,12 @@ class Icon {
 //          Methods for creating specific icons
 //------------------------------------------------------------------------------------------------
 
-   Question() {
+   /*Question() {
        alert('working...')
        this.use(  this.comID(  'question.main'  )  ,  'question'  )
        this.animateStroke(0, '5s')
        alert('worked')
-   }
+   }*/
 
 
 }
