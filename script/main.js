@@ -28,8 +28,8 @@ function initializeSVG() {
     setAttributes(  svg,  [
 
         [  'id'           ,    'mainSVG'              ],
-        [  'viewBox'      ,    '0 0 256 256'          ],
-        [  'preserveAspectRatio',   'xMinYMin meet'   ]
+        [  'viewBox'      ,    '0 0 256 256'          ]
+
     ])
 
     document.getElementById('IconDiv').appendChild(  svg  )
@@ -55,7 +55,7 @@ function showTop() {
 
 
 var mainsvg = initializeSVG()
-alert([getComputedStyle(mainsvg).width, getComputedStyle(smainvg).height])
+alert([getComputedStyle(mainsvg).width, getComputedStyle(mainsvg).height])
 var icn = new Icon('Circle');
 
 } catch ( error ) {
