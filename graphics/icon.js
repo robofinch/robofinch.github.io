@@ -137,6 +137,26 @@ class Icon {
 
 
 
+   animateStroke(  useNum, duration ) {
+
+     var animation  =  document.createElementNS(  SVGNS, 'animate'  )
+
+    setAttributes(   animation,    [
+
+       [  'attributeName' ,   'stroke-dashoffset'    ],
+       [  'dur'           ,   duration               ],
+       [  'repeatCount'   ,   'indefinite'           ],
+
+       [  'values'        ,   "10;20;"               ]
+
+    ])
+
+    this.useEls[  useNum  ].appendChild(  animation  )
+
+    }
+
+
+
    animatePath(  useNum, d, duration, keyPoints, keyTimes  ) {
 
       var animation = document.createElementNS(  SVGNS, 'animateMotion'  )
@@ -187,7 +207,7 @@ class Icon {
    Question() {
        alert('working...')
        this.use(  this.comID(  'question.main'  )  ,  'question'  )
-       this.useEls[0].classList.add('words')
+       this.animateStroke(0, 5000)
        alert('worked')
    }
 
