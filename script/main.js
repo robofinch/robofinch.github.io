@@ -17,17 +17,17 @@ function showTop() {
    world.classList.remove('hidden')
 
    document.getElementById('questionPathAnimation1').beginElement()
-   //window.setTimeout(function() {
+   window.setTimeout(function() {
 
        document.getElementById('questionPathAnimation2').beginElement()
 
-    //}, 800)
-   // window.setTimeout(function() {
+    }, 800)
+    window.setTimeout(function() {
 
         document.getElementById('svgGroup1').setAttribute('fill', '#F00')
         document.getElementById('svgGroup2').setAttribute('fill', '#F00')
 
-    //}, 1600)
+    }, 1600)
 
 }
 
