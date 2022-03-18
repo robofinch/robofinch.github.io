@@ -34,6 +34,8 @@ function initializeSVG() {
 
     document.getElementById('IconDiv').appendChild(  svg  )
 
+    svg.classList.add( 'screen' )
+
     return svg
 }
 

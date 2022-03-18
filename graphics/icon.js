@@ -185,9 +185,10 @@ class Icon {
 //          Methods for creating specific icons
 //------------------------------------------------------------------------------------------------
 
-   Circle() {
-       alert('circle')
-       this.use(  this.comID(  'circle.main'  )  ,  'test'  )
+   Question() {
+       alert('working...')
+       this.use(  this.comID(  'question.main'  )  ,  'question'  )
+       alert('worked')
    }
 
 
