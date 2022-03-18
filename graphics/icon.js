@@ -145,9 +145,9 @@ class Icon {
 
        [  'attributeName' ,   'stroke-dashoffset'    ],
        [  'dur'           ,   duration               ],
-       [  'repeatCount'   ,   'indefinite'           ],
+       [  'repeatCount'   ,   '1'           ],
 
-       [  'values'        ,   "10;20;"               ]
+       [  'values'        ,   "0;10000;"             ]
 
     ])
 
@@ -207,7 +207,7 @@ class Icon {
    Question() {
        alert('working...')
        this.use(  this.comID(  'question.main'  )  ,  'question'  )
-       this.animateStroke(0, 5000)
+       this.animateStroke(0, '5s')
        alert('worked')
    }
 

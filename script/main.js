@@ -28,7 +28,7 @@ function initializeSVG() {
     setAttributes(  svg,  [
 
         [  'id'           ,    'mainSVG'              ],
-        [  'viewBox'      ,    '0 0 256 256'          ]
+        [  'viewBox'      ,    '0 0 256 192'          ]
 
     ])
 
