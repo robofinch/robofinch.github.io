@@ -110,8 +110,8 @@ const loadingScreen  =  {
             renderStyle   =  document.getElementById(  'RenderDiv'            ).style ,
             bckgrndStyle  =  document.getElementById(  'BackgroundStaticDiv'  ).style
 
-      renderStyle.width   =  window.outerWidth   +  'px'
-      renderStyle.height  =  window.outerHeight  +  'px'
+      renderStyle.width   =  window.screen.width   +  'px'
+      renderStyle.height  =  window.screen.height  +  'px'
 
       bckgrndStyle.backgroundImage   =   this.bmpURL
 
