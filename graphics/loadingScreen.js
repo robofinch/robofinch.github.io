@@ -106,12 +106,7 @@ const loadingScreen  =  {
 
    initializeStyles()  {
 
-      var
-            renderStyle   =  document.getElementById(  'RenderDiv'            ).style ,
-            bckgrndStyle  =  document.getElementById(  'BackgroundStaticDiv'  ).style
-
-      //renderStyle.width   =  window.screen.availWidth   +  'px'
-      //renderStyle.height  =  window.screen.availHeight  +  'px'
+      var  bckgrndStyle      =       document.getElementById(  'BackgroundStaticDiv'  ).style
 
       bckgrndStyle.backgroundImage   =   this.bmpURL
 
@@ -175,7 +170,7 @@ const loadingScreen  =  {
          div.style.backgroundImage   =     'url('  +  imgData  +  ')'
 
          div.style.imageRendering    =     'pixelated'
-         div.style.backgroundSize    =     '20%'
+         div.style.backgroundSize    =     'max(20%, 64px)'
 
          document.getElementById(          'BackgroundShadowDiv'   ).appendChild(  div  )
 
