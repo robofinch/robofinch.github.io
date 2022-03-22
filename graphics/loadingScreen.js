@@ -109,6 +109,7 @@ const loadingScreen  =  {
       var  bckgrndStyle      =       document.getElementById(  'BackgroundStaticDiv'  ).style
 
       bckgrndStyle.backgroundImage   =   this.bmpURL
+      bckgrndStyle.backgroundSize    =   "max(30%, 100px);"
 
    },
 
