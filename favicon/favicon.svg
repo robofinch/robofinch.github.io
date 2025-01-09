@@ -1,0 +1,37 @@
+<svg version="1.1" width="160" height="160" viewBox="0 0 10 10" xmlns="http://www.w3.org/2000/svg">
+
+      <style>
+      * {
+            --Black:    black;
+            --Gray:     gray;
+            --White:    white;
+            --Air:      #ED3624;
+            --Fire:     #FA9D00;
+            --Light:    #FFFF00;
+            --Dark:     #A400C7;
+            --Water:    #1749B3;
+            --Earth:    #00733B;
+      }
+      </style>
+
+      <circle stroke="var(--Black)" stroke-width="0.2" fill="var(--White)" cx="5" cy="5" r="4.75"></circle>
+
+      <g stroke="var(--Black)" stroke-width="0.3" stroke-linejoin="round">
+
+            <!-- Using decimals instead of some (seemingly impossible) exact method sort of pains me -->
+
+            <path fill="var(--Light)" d="M 5 5 L 5 0.5 8.8971143171 2.75 z" transform="rotate(   0, 5, 5 )"></path>
+            <path fill="var(--Fire)" d="M 5 5 L 5 0.5 8.8971143171 2.75 z" transform="rotate(  60, 5, 5 )"></path>
+            <path fill="var(--Air)" d="M 5 5 L 5 0.5 8.8971143171 2.75 z" transform="rotate( 120, 5, 5 )"></path>
+            <path fill="var(--Earth)" d="M 5 5 L 5 0.5 8.8971143171 2.75 z" transform="rotate( 180, 5, 5 )"></path>
+            <path fill="var(--Water)" d="M 5 5 L 5 0.5 8.8971143171 2.75 z" transform="rotate( 240, 5, 5 )"></path>
+            <path fill="var(--Dark)" d="M 5 5 L 5 0.5 8.8971143171 2.75 z" transform="rotate( 300, 5, 5 )"></path>
+
+            <path fill="var(--Gray)" d="M 8.8971143171 7.25 L 1.1028856829 7.25 5 0.5 z"></path>
+            <path fill="var(--White)" d="M 8.8971143171 7.25 L 1.1028856829 7.25 5 0.5 z" transform="rotate( 180, 5, 5 )"></path>
+
+      </g>
+
+      <!-- Maybe put a slime at the center, or leave it blank. -->
+
+</svg>
