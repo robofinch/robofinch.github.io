@@ -5,5 +5,5 @@ simple RPG set in a 2D pseudorandomly-generated world with a variety of slimes a
 as well as many structures, including towers that house powerful golems. The player, who is a golem,
 aims to conquer the world by fighting slimes and other golems.
 
-This version has yet to reach a minimum playable state, and won't increment version numbers until then.
+This version has yet to reach a minimum playable state; many features haven't been implemented.
 
